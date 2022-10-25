@@ -1,25 +1,22 @@
 baseURL: https://blog.djm.me/
 languageCode: en-GB
-theme: fluency
+theme: papercss-hugo-theme
 title: Dave James Miller's Blog
-
-params:
-  author: Dave James Miller
-  copyright: © 2022 Dave James Miller
-  mainSections:
-    - posts
+#
+#params:
+#  author: Dave James Miller
+#  copyright: © 2022 Dave James Miller
+#  mainSections:
+#    - posts
 
 menu:
-  main:
-    - identifier: posts
-      name: posts
-      url: posts/
+  nav:
+    - name: Blog
+      url: /
       weight: 1
-    - identifier: tags
-      name: tags
-      url: tags/
+    - name: Tags
+      url: /tags/
       weight: 2
-    - identifier: archives
-      name: archives
-      url: archives/
-      weight: 3
+    - name: RSS
+      url: /index.xml
+      weight: 4
