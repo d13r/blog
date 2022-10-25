@@ -1,19 +1,25 @@
 baseURL: https://blog.djm.me/
-languageCode: en-gb
-theme: bilberry-hugo-theme
+languageCode: en-GB
+theme: fluency
 title: Dave James Miller's Blog
 
 params:
   author: Dave James Miller
-  avatarEmail: d@djm.me
-  copyrightBy: Dave James Miller
-  copyrightUrl: /
-  copyrightUseCurrentYear: true
-  dateFormat: Mon 2 Jan 2006, 3:04pm # https://pkg.go.dev/time#pkg-constants
-  enableMomentJs: false
-  paginate: 50
-  #permanentTopNav: true
-  resizeImages: true
-  showArchive: false
-  showSocialMedia: false
-  #subtitle: Something something something
+  copyright: © 2022 Dave James Miller
+  mainSections:
+    - posts
+
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      url: posts/
+      weight: 1
+    - identifier: tags
+      name: tags
+      url: tags/
+      weight: 2
+    - identifier: archives
+      name: archives
+      url: archives/
+      weight: 3
