@@ -1,22 +1,29 @@
 baseURL: https://blog.djm.me/
 languageCode: en-GB
-theme: papercss-hugo-theme
+theme: hugo-tania
 title: Dave James Miller's Blog
-#
-#params:
-#  author: Dave James Miller
-#  copyright: © 2022 Dave James Miller
-#  mainSections:
-#    - posts
+
+params:
+  author: Dave James Miller
+  mainSections:
+    - posts
+  titleEmoji: '👨🏻‍💻'
 
 menu:
-  nav:
-    - name: Blog
+  header:
+    - weight: 1
+      name: Home
       url: /
-      weight: 1
-    - name: Tags
+    - weight: 2
+      name: Tags
       url: /tags/
-      weight: 2
-    - name: RSS
+  footer:
+    - weight: 1
+      name: RSS Feed
       url: /index.xml
-      weight: 4
+    - weight: 2
+      name: Powered by Hugo
+      url: https://gohugo.io/
+    - weight: 3
+      name: Tania Theme
+      url: https://github.com/WingLim/hugo-tania
